@@ -13,6 +13,8 @@
 		CA40DB2C2C7C5ECC00B14759 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CA40DB2B2C7C5ECC00B14759 /* Base */; };
 		CA40DB2E2C7C5ECD00B14759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA40DB2D2C7C5ECD00B14759 /* Assets.xcassets */; };
 		CA40DB312C7C5ECD00B14759 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CA40DB302C7C5ECD00B14759 /* Base */; };
+		CA40DB392C7C5F0400B14759 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40DB382C7C5F0400B14759 /* DataStore.swift */; };
+		CA40DB3B2C7C5F1D00B14759 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40DB3A2C7C5F1D00B14759 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CA40DB2D2C7C5ECD00B14759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA40DB302C7C5ECD00B14759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA40DB322C7C5ECD00B14759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA40DB382C7C5F0400B14759 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CA40DB3A2C7C5F1D00B14759 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		CA40DB232C7C5ECC00B14759 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				CA40DB242C7C5ECC00B14759 /* AppDelegate.swift */,
-				CA40DB262C7C5ECC00B14759 /* SceneDelegate.swift */,
-				CA40DB282C7C5ECC00B14759 /* ViewController.swift */,
-				CA40DB2A2C7C5ECC00B14759 /* Main.storyboard */,
-				CA40DB2D2C7C5ECD00B14759 /* Assets.xcassets */,
-				CA40DB2F2C7C5ECD00B14759 /* LaunchScreen.storyboard */,
-				CA40DB322C7C5ECD00B14759 /* Info.plist */,
+				CA40DB3F2C7C600300B14759 /* App */,
+				CA40DB402C7C601B00B14759 /* ViewControllers */,
+				CA40DB3E2C7C5FDA00B14759 /* Loyouts */,
+				CA40DB3D2C7C5FA900B14759 /* Models */,
+				CA40DB3C2C7C5F9700B14759 /* Services */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		CA40DB3C2C7C5F9700B14759 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA40DB382C7C5F0400B14759 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA40DB3D2C7C5FA900B14759 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA40DB3A2C7C5F1D00B14759 /* Person.swift */,
+				CA40DB2D2C7C5ECD00B14759 /* Assets.xcassets */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA40DB3E2C7C5FDA00B14759 /* Loyouts */ = {
+			isa = PBXGroup;
+			children = (
+				CA40DB2A2C7C5ECC00B14759 /* Main.storyboard */,
+				CA40DB2F2C7C5ECD00B14759 /* LaunchScreen.storyboard */,
+			);
+			path = Loyouts;
+			sourceTree = "<group>";
+		};
+		CA40DB3F2C7C600300B14759 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CA40DB242C7C5ECC00B14759 /* AppDelegate.swift */,
+				CA40DB262C7C5ECC00B14759 /* SceneDelegate.swift */,
+				CA40DB322C7C5ECD00B14759 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CA40DB402C7C601B00B14759 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA40DB282C7C5ECC00B14759 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA40DB3B2C7C5F1D00B14759 /* Person.swift in Sources */,
 				CA40DB292C7C5ECC00B14759 /* ViewController.swift in Sources */,
+				CA40DB392C7C5F0400B14759 /* DataStore.swift in Sources */,
 				CA40DB252C7C5ECC00B14759 /* AppDelegate.swift in Sources */,
 				CA40DB272C7C5ECC00B14759 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ACQJ3L623S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,9 +355,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Schol.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ACQJ3L623S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,9 +387,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Schol.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
