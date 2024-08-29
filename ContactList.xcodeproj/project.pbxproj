@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CA37A8A12C7D62C2001D1079 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37A8A02C7D62C2001D1079 /* ContactListViewController.swift */; };
 		CA37A8A52C7EBD9F001D1079 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37A8A42C7EBD9F001D1079 /* ContactInfoViewController.swift */; };
+		CA37A8AB2C8114A0001D1079 /* FullContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37A8AA2C8114A0001D1079 /* FullContactListViewController.swift */; };
 		CA40DB252C7C5ECC00B14759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40DB242C7C5ECC00B14759 /* AppDelegate.swift */; };
 		CA40DB272C7C5ECC00B14759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40DB262C7C5ECC00B14759 /* SceneDelegate.swift */; };
 		CA40DB2C2C7C5ECC00B14759 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CA40DB2B2C7C5ECC00B14759 /* Base */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		CA37A8A02C7D62C2001D1079 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		CA37A8A42C7EBD9F001D1079 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		CA37A8AA2C8114A0001D1079 /* FullContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactListViewController.swift; sourceTree = "<group>"; };
 		CA40DB212C7C5ECC00B14759 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA40DB242C7C5ECC00B14759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA40DB262C7C5ECC00B14759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				CA37A8A02C7D62C2001D1079 /* ContactListViewController.swift */,
 				CA37A8A42C7EBD9F001D1079 /* ContactInfoViewController.swift */,
+				CA37A8AA2C8114A0001D1079 /* FullContactListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				CA40DB392C7C5F0400B14759 /* DataStore.swift in Sources */,
 				CA40DB252C7C5ECC00B14759 /* AppDelegate.swift in Sources */,
 				CA40DB272C7C5ECC00B14759 /* SceneDelegate.swift in Sources */,
+				CA37A8AB2C8114A0001D1079 /* FullContactListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

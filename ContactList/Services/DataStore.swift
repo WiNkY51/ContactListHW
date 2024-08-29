@@ -12,7 +12,7 @@ class DataStore {
     
     let names: Set = [
         "Tim",
-        "Tom",
+        "Peter",
         "Jeck",
         "Aron",
         "Dana",
