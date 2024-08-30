@@ -20,8 +20,10 @@ final class TabBarController: UITabBarController {
     private func transferData() {
         let data = Person.getPerson()
         
-        guard let fullContactVC = viewControllers?.last as? FullContactListViewController else { return }
-        guard let contactListVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let fullContactNavVC = viewControllers?.last as? UINavigationController else { return }
+        guard let contactListNavVC = viewControllers?.first as? UINavigationController else { return }
+        guard let fullContactVC = fullContactNavVC.topViewController as? FullContactListViewController else { return }
+        guard let contactListVC = contactListNavVC.topViewController as? ContactListViewController else { return }
         
         fullContactVC.contacts = data
         contactListVC.contacts = data
