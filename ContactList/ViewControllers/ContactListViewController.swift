@@ -9,7 +9,7 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
 
-    private var contacts = Person.getPerson()
+    var contacts: [Person]!
     
     
     
